@@ -1,6 +1,6 @@
-# Sample Hardhat Project
+# Smart Contracts for Internet of Vehicles Digital Twins 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This repo contains the first version of contracts for the MSc. Thesis 
 
 Try running some of the following tasks:
 
