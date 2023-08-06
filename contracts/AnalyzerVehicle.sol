@@ -1,13 +1,10 @@
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-contract AnalyzerVehicle {
-
-        uint256 minTemp;
-        uint256 maxTemp;
+contract VehicleAnalyzer{
+    uint256 minTemp;
+    uint256 maxTemp;
     
-    
-
     constructor () {
         minTemp = 65;
         maxTemp = 75;

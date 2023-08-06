@@ -1,10 +1,3 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
-const hre = require("hardhat");
 
 async function main() {
   
@@ -19,12 +12,12 @@ async function main() {
 
   //Get all the addresses
 
-  const [vehcileAddr, analyzerVehicleAddr] = await rsu.getChildContractAddresses();
+  const [vehcileAddr, vehicleAnalyzerAddr] = await rsu.getChildContractAddresses();
 
 
   console.log(`RSU deployed to:  ${rsu.address}`);
   console.log(`Vehcle Contract deployed to:  ${vehcileAddr}`);
-  console.log(`Analyzer Contract deployed to:  ${analyzerVehicleAddr}`);  
+  console.log(`Analyzer Contract deployed to:  ${vehicleAnalyzerAddr}`);  
 }
 
 // We recommend this pattern to be able to use async/await everywhere

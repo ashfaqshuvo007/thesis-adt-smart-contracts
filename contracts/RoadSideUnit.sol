@@ -8,7 +8,7 @@ import "./Vehicle.sol";
 
 contract RoadSideUnit {
 
-    address public analyzerVehicleAddr;
+    address public vehicleAnalyzerAddr;
     address public vehicleAddr;
     
 
@@ -17,13 +17,13 @@ contract RoadSideUnit {
         Vehicle vehicle = new Vehicle();
         vehicleAddr = address(vehicle);
 
-        AnalyzerVehicle analyzervehicle = new AnalyzerVehicle();
-        analyzerVehicleAddr = address(analyzervehicle);
+        VehicleAnalyzer vehicleAnalyzer = new VehicleAnalyzer();
+        vehicleAnalyzerAddr = address(vehicleAnalyzer);
     }
 
     function getChildContractAddresses() public view returns (address, address) {
 
-        return (vehicleAddr, analyzerVehicleAddr);
+        return (vehicleAddr, vehicleAnalyzerAddr);
     }
    
 }
